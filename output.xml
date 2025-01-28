@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-01-29T01:55:27.707329" rpa="false" schemaversion="5">
+<suite id="s1" name="UAT Lab7 001" source="C:\work\Software_years3\WebDemo\login_tests\UAT_Lab7_001.robot">
+<test id="s1-t1" name="Form Submission with Valid Data" line="19">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-01-29T01:55:27.972262" level="INFO">Opening browser 'chrome' to base url 'http://localhost:7272/Form.html'.</msg>
+<arg>${Form}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-01-29T01:55:27.972052" elapsed="1.977621"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-01-29T01:55:29.950424" level="INFO">Typing text 'Somsong' into text field 'id=firstname'.</msg>
+<msg time="2025-01-29T01:55:30.019060" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-01-29T01:55:30.019287" level="FAIL">Element with locator 'id=firstname' not found.</msg>
+<arg>id=firstname</arg>
+<arg>${FNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-01-29T01:55:29.949996" elapsed="0.071422">Element with locator 'id=firstname' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=lastname</arg>
+<arg>${LNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-01-29T01:55:30.021749" elapsed="0.000033"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=destination</arg>
+<arg>${DESTINATIONS}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-01-29T01:55:30.021973" elapsed="0.000021"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=contactperson</arg>
+<arg>${CONTACT_PERSON}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-01-29T01:55:30.022152" elapsed="0.000019"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=relationship</arg>
+<arg>${RELATIONSHIP}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-01-29T01:55:30.022278" elapsed="0.000017"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-01-29T01:55:30.022446" elapsed="0.000016"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=phone</arg>
+<arg>${PHONE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-01-29T01:55:30.022602" elapsed="0.000015"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id=submitButton</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-01-29T01:55:30.022706" elapsed="0.000016"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-01-29T01:55:30.022880" elapsed="0.000018"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2025-01-29T01:55:30.022984" elapsed="0.000016"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<arg>${Complete}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="NOT RUN" start="2025-01-29T01:55:30.023102" elapsed="0.000019"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-01-29T01:55:30.023209" elapsed="0.000016"/>
+</kw>
+<status status="FAIL" start="2025-01-29T01:55:27.971302" elapsed="2.052072">Element with locator 'id=firstname' not found.</status>
+</test>
+<status status="FAIL" start="2025-01-29T01:55:27.708352" elapsed="2.315667"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="UAT Lab7 001" id="s1" pass="0" fail="1" skip="0">UAT Lab7 001</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
